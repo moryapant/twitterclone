@@ -41,7 +41,9 @@
 
                 <div class="mt-2 flex">
 
-                    <!--condtion to not showing follow me to own profile -->
+                    <!--condtion to not showing follow me to own profile commit -->
+
+                    
 
                     @if(auth()->user()->isNot($user))
 
