@@ -36,7 +36,7 @@
 
             <a href="/profiles/{{$this->comment_user_id}}">
 
-            <div class="p-2 mr-2 flex-none"><img class="rounded-full mr-2 mt-2" style="max-width: 100%; height: 50px; flex-shrink: 0;" src="{{App\User::find($comment->user_id)->avatar}}" alt=""></div>
+            <div class="p-2 mr-2 flex-none"><img class="inline object-cover w-16 h-16 mr-2 rounded-full" style="" src="{{App\User::find($comment->user_id)->avatar}}" alt=""></div>
             <div>
             </a>
             <h5 class="font-bold mb-2">
