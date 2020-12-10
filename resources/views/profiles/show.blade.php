@@ -41,9 +41,7 @@
 
                 <div class="mt-2 flex">
 
-                    <!--condtion to not showing follow me to own profile commit -->
-
-                    
+                    <!--condtion to not showing follow me to own profile -->
 
                     @if(auth()->user()->isNot($user))
 
@@ -70,7 +68,10 @@
 
             <div>
                 <p class="text-base text-gray-800 font-black p-2 mt-4">" {{$user->about}} "</p>
-                <img class="rounded-full mr-2  absolute rounded-full mr-2 mt-2"
+                {{-- <img class="rounded-full mr-2  absolute rounded-full mr-2 mt-2"
+                    style="width: 20%; left: calc(50% - 75px); top:40%" src="{{$user->avatar}}" alt=""> --}}
+
+                    <img class="absolute object-cover w-48 h-48 mr-2 rounded-full  "
                     style="width: 20%; left: calc(50% - 75px); top:40%" src="{{$user->avatar}}" alt="">
             </div>
 
