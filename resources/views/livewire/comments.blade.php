@@ -7,13 +7,16 @@
             <p class="p-2 bg-blue-500"><strong class="text-white">ADD COMMENTS</strong> </p>
           </div>
         </div>
-        <div class="bg-gray-200 md:text-base text-sm border-b p-2 h-24">
-            <textarea wire:model="body" name="comment" id="" cols="75" rows="3"></textarea>
-          </div>
-          <div class="p-2 flex justify-end rounded-b bg-white-500">
-            <button class="focus:outline-none py-1 px-2 md:py-2 md:px-3 w-24 mr-2 bg-blue-500 hover:bg-blue-600 text-white rounded" wire:click="newComment" >Post</button>
 
-          </div>
+
+        {{-- <div class="bg-gray-200 md:text-base text-sm border-b p-2 h-"24"> --}}
+          <div class="box border rounded flex flex-col shadow bg-white">
+            <textarea class="resize border rounded-md" wire:model="body" name="comment" id=""></textarea>
+        </div>
+
+        <div class="p-2 flex justify-end rounded-b bg-white-500">
+            <button class="focus:outline-none py-1 px-2 md:py-2 md:px-3 w-24 mr-2 bg-blue-500 hover:bg-blue-600 text-white rounded" wire:click="newComment" >Post</button>
+        </div>
 
 
 
