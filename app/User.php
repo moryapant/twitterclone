@@ -47,7 +47,8 @@ class User extends Authenticatable
 
         $ids = $this->follows()->pluck('id');
         $ids->push($this->id);
-        return  tweets::whereIn('user_id', $ids)->latest()->paginate(10);
+        // return  tweets::whereIn('user_id', $ids)->latest()->paginate(10);
+         return  tweets::whereIn('user_id', $ids)->orderBy('created_at','DESC')->paginate(10);
 
     }
 

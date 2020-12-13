@@ -32,6 +32,7 @@ public $comment_user_id;
 
 
 
+
 public function mount($comvar) {
 
 $this->tweets_id = $this->comvar->id;

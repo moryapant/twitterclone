@@ -21,6 +21,7 @@ class Likes extends Component
     public $check;
     public $commentCount;
     public $retweet;
+    public $retweetVar;
 
 
 
@@ -169,8 +170,21 @@ class Likes extends Component
 
         //dd($this->retweet);
 
-       DB::table('tweets')
-       ->insert(['user_id' =>$this->retweet->user_id, 'body' =>$this->retweet->body, 'image' =>$this->retweet->image, 'rt' => $this->user_id , 'created_at' => now()]);
+      $this->retweetVar =  DB::table('tweets')
+       ->insert(['user_id' =>$this->retweet->user_id, 'body' =>$this->retweet->body, 'image' =>$this->retweet->image, 'rt' => $this->user_id ,'og_tweet' => $this->retweet->id, 'created_at' => now()]);
+
+    
+       
+       
+
+    
+         
+       
+       return redirect()->to('/tweets');
+  
+
+    // $this->emit('retweetVar', $this->retweetVar);
+
 
 
     }

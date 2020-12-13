@@ -71,8 +71,16 @@
                 {{-- <img class="rounded-full mr-2  absolute rounded-full mr-2 mt-2"
                     style="width: 20%; left: calc(50% - 75px); top:40%" src="{{$user->avatar}}" alt=""> --}}
 
+
+                    @if($user->avatar)
                     <img class="absolute object-cover w-48 h-48 mr-2 rounded-full  "
                     style="width: 20%; left: calc(50% - 75px); top:40%" src="{{$user->avatar}}" alt="">
+
+                    @else
+                    <img class="absolute object-cover w-48 h-48 mr-2 rounded-full  "
+                    style="width: 20%; left: calc(50% - 75px); top:40%" src="/image/avtaar1.jpg" alt="">
+
+                    @endif
             </div>
 
 

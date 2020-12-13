@@ -19,6 +19,7 @@ class CreateTweetsTable extends Migration
             $table->string('body');
             $table->string('image')->nullable();
             $table->integer('rt')->nullable();
+            $table->integer('og_tweet')->nullable();
             $table->timestamps();
         });
     }

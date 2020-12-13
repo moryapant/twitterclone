@@ -56,7 +56,7 @@
             <a href=" {{route('tweets.show', $tweet->id)}}">{{$tweet->body}}</a>
         </p>
         <a href=" {{route('tweets.show', $tweet->id)}}">
-    <p><img class="max-w-full" src="{{$tweet->image}}"  alt=""></p></a>
+    <p class="content-center"><img class="max-w-full items-center justify-center content-center" src="{{$tweet->image}}"  alt=""></p></a>
     <livewire:likes :foo="app\tweets::find($tweet->id)" />
        
         </div>

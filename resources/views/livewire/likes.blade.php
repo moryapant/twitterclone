@@ -60,7 +60,7 @@
       {{-- <i class="mr-auto mt-1 item-align-left"></i>   --}}
       {{-- <button class="bg-red-500 rounded-sm shadow px-1 py-1 m-2 text-white" type="submit">Delete</button> --}}
      
-        <a  wire:click="retweet" ><i class="fas fa-retweet fa-1x mr-2 mt-1" ></i> </a>
+        <a href="" wire:click.prevent="retweet" ><i class="fas fa-retweet fa-1x mr-2 mt-1"></i> </a>
       <i class="far fa-window-close fa-1x mr-auto mt-1"></i>  
      
     </span>
