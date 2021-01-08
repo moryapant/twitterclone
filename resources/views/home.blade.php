@@ -15,8 +15,9 @@
             <input class="bg-blue-500 rounded-lg shadow px-2 py-2 my-2 text-black" type="file" class="form-control"
                 name="image" id="cover-image">
 
-
-            <hr class="my-4">
+            
+                {{-- <input type="text" wire:model="about" placeholder="paste online Image" class="w-full px-4 py-5 rounded-lg shadow-lg focus:outline-none focus:shadow-outline text-gray-600 font-medium">
+            <hr class="my-4" name="online"> --}}
 
             <footer class="flex justify-between items-center">
 
